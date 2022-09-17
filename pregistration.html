@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="allstyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-info">
+            <div type="button" class="back"> <
+            </div><br>
+            <p>თანამშრომლის ინფო</p>
+            <p>ლეპტოპის მახასიათებლები</p>
+        </div>
+        <hr>
+    </header>
+    <div class="form-container">
+        <div class="inner-container">
+            <div class="name-last">
+                <form>
+                    <label>სახელი</label><br>
+                    <input type="text" minlength="2" required placeholder="გრიშა"><br>
+                    <small>მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+                </form>
+                <form>
+                    <label>გვარი</label><br>
+                    <input type="text" minlength="2" required placeholder="ბაგრატიონი"><br>
+                    <small>მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+                </form>
+            </div>
+            <br>
+            <select class="select" id="team" required>
+            </select>
+            <br><br>
+            <select class="select" id="positions" required>
+            </select>
+            <br><br>
+                <lebel>მეილი</lebel><br>
+                <input class="email" type="email" placeholder="grish666@redberry.ge" required><br>
+                <small>უნდა მთავრდებოდეს @redberry.ge-თი</small>
+                <br><br>
+                <label>ტელეფონის ნომერი</label><br>
+                <input class="email" type="text" placeholder="+995 598 00 07 01" required><br>
+                <small>უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</small>
+                <br><br>
+            <button>შემდეგი</button>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="reg.js"></script>
+
+</html>
